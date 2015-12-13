@@ -1,7 +1,11 @@
+/.idea
 *.class
+*.iml
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+/jnlp-primitive-webapp/target
+/jnlp-primitive-client/target
 
 # Package Files #
 *.jar
