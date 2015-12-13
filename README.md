@@ -2,7 +2,7 @@
 
 ---
 
-*This app is a part of investigation to move some of clients, who use desktop java apps*
+*This app is a part of investigation to move some of users to Java WebStart, who use desktop java apps*
 
 
 ##Java web start simple application
@@ -18,7 +18,8 @@ Passing the test version to client:
 * putting in repository download or on the file-exchanger. 
 And if there were changes in the resources that the client uses to on production.
 Its a user headache what file to change, place or replace.
-First .cmd scripts are helped.. But we can do better!
+
+First .cmd scripts were helping... But we can do better!
 So I decided to at least test releases translate to Java WebStart. 
 And this app - my first steps.
 
@@ -39,10 +40,10 @@ git clone  https://github.com/IavnFGV/jnlp-primitive-app.git
 <!-- Role to manage WAR files via HTML /manager. The name should be as is! -->
 <role rolename="manager-gui"/>
 <!-- Role to manage WAR files via script like Maven. The name should be as is! -->
+<role rolename="manager-script"/>
 <!-- One user cannot have manager-gui and manager-script roles -->
 <user username="managerGui" password="managerPwd" roles="manager-gui"/>
 <user username="manager" password="managerPwd" roles="manager-script"/>
-<role rolename="manager-script"/>
 ```
 * Configure your Maven /settings.xml to include the password.
   
